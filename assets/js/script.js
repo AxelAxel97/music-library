@@ -1,4 +1,4 @@
-// get elements
+
 const searchForm = document.getElementById('searchForm');
 const searchInput = document.getElementById('searchInput');
 const searchType = document.getElementById('searchType');
@@ -9,13 +9,13 @@ const resultsSection = document.getElementById('resultsSection');
 const resultsGrid = document.getElementById('resultsGrid');
 const resultCount = document.getElementById('resultCount');
 
-// setup when page loads
+
 document.addEventListener('DOMContentLoaded', function() {
     searchForm.addEventListener('submit', handleSearch);
     searchInput.addEventListener('input', checkInput);
 });
 
-// check input as user types
+
 function checkInput() {
     const value = searchInput.value.trim();
     errorMsg.textContent = '';
@@ -28,14 +28,14 @@ function checkInput() {
     return true;
 }
 
-// handle form submit
+
 function handleSearch(e) {
     e.preventDefault();
     
     const query = searchInput.value.trim();
     const type = searchType.value;
     
-    // validate
+    
     if (query === '') {
         errorMsg.textContent = 'Please enter something to search for';
         return;
@@ -46,18 +46,18 @@ function handleSearch(e) {
         return;
     }
     
-    // search
+    
     searchMusic(query, type);
 }
 
-// search using itunes api
+
 async function searchMusic(query, type) {
     loading.classList.remove('hide');
     errorBox.classList.add('hide');
     resultsSection.classList.add('hide');
     
     try {
-        // build url
+        
         let entity = '';
         if (type === 'track') {
             entity = 'song';
@@ -88,7 +88,7 @@ async function searchMusic(query, type) {
     }
 }
 
-// display results
+
 function showResults(results, type, query) {
     resultsGrid.innerHTML = '';
     
@@ -101,7 +101,7 @@ function showResults(results, type, query) {
     
     resultCount.textContent = `Found ${results.length} results`;
     
-    // create cards for each result
+    
     results.forEach(item => {
         const card = makeCard(item, type);
         resultsGrid.appendChild(card);
@@ -110,7 +110,7 @@ function showResults(results, type, query) {
     resultsSection.classList.remove('hide');
 }
 
-// create card element
+
 function makeCard(item, type) {
     const card = document.createElement('div');
     card.className = 'card';
@@ -119,7 +119,7 @@ function makeCard(item, type) {
     
     let cardContent = `<img src="${image}" alt="${item.trackName || item.collectionName || item.artistName}">`;
     
-    // different content based on type
+    
     if (type === 'track') {
         cardContent += `
             <h3>${item.trackName}</h3>
@@ -139,7 +139,7 @@ function makeCard(item, type) {
         `;
     }
     
-    // add itunes link
+    
     if (item.trackViewUrl || item.collectionViewUrl || item.artistViewUrl) {
         const link = item.trackViewUrl || item.collectionViewUrl || item.artistViewUrl;
         cardContent += `<a href="${link}" target="_blank">View on iTunes</a>`;

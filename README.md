@@ -81,8 +81,6 @@ The application follows a single-page structure with clearly defined sections:
 
 A dark theme colour palette was chosen for "Music Library", inspired by modern music streaming platforms. This not only provides a sleek backdrop for album artwork but also reduces eye strain during extended use.
 
-![Music Library Color Palette](assets/images/color-palette.png)
-
 **Primary Colours:**
 - Background: `#1a1a1a` - Deep black for the main background
 - Secondary: `#2d2d2d` - Dark grey for cards and sections
@@ -113,10 +111,6 @@ In building "Music Library", I've utilised a combination of languages, APIs and 
 - **Git & GitHub**: Used for version control and code storage.
 - **VS Code**: My preferred code editor for development.
 - **GitHub Pages**: Provides stable hosting for "Music Library".
-- **Chrome DevTools**: Used extensively for debugging and testing.
-- **Lighthouse**: For performance and accessibility testing.
-
-
 
 ### Features
 
@@ -201,10 +195,10 @@ This site was deployed via GitHub pages using the following steps:
 - From the source section drop-down menu change Branch from **none** to **main** and click the **Save**
 - After a few minutes the website is live and will be automatically refreshed with each Git push command.
 
-The link to the deployed site is:  https://axelaxel97.github.io/Oisin-Rings-Portfolio-1-Milestone-Project/
+The link to the deployed site is:  
 
 To run locally:
-- Log into GitHub and click on repository to download ([ms1-project](https://github.com/AxelAxel97/Oisin-Rings-Portfolio-1-Milestone-Project))
+- Log into GitHub and click on repository to download 
 
 - Select **Code** and click "Download the Zip file.
 - Once download is completed, extract ZIP file and use in your local environment.
