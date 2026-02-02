@@ -1,6 +1,6 @@
 # Music Library
 
-[Click here](https://YOUR-USERNAME.github.io/music-library/) to view the live web application.
+[Click here](https://.github.io/music-library/) to view the live web application.
 
 ## Project Development & Planning
 
@@ -111,6 +111,20 @@ In building "Music Library", I've utilised a combination of languages, APIs and 
 - **Git & GitHub**: Used for version control and code storage.
 - **VS Code**: My preferred code editor for development.
 - **GitHub Pages**: Provides stable hosting for "Music Library".
+
+## Testing
+
+### Validator testing
+
+[HTMl of index]
+
+![alt text](assets/images/html-checker.png)
+
+No errors were found with the W3C validator for index.html.
+
+![CSS](assets/images/css-validator.png)
+
+No errors were found with the W3C validator for CSS.
 
 ### Features
 
