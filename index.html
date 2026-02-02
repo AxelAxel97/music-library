@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset ="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Search and discover music with the interactive music library">
-    <title>Music Library - Search Songs & Artists</title>
+    <meta name="description" content="Music library for searching songs and artists">
+    <title>Music Library</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-   
     
     <header>
-        <div class ="container">
-            <h1>🎵 Music Library</h1>
-            <p>Discover your favorite songs and artists</p>
-        </div>
+        <h1>🎵 Music Library</h1>
+        <p>Make the everyday more enjoyable!</p>
     </header>
 
-  <!-- The main section where users actually interact -->
-    <main class="container">
-       
+    <main>
         
-        <section class ="search-section" aria-label="Search music">
-            <h2>Search Music</h2>
-            <form id="search-form" role="search">
-                <div class ="form-group">
-                    <label for="search-input">Enter artist, song, or album:</label>
-                    <input 
-                        type ="text" 
-                        id ="search-input" 
-                        name ="search"
-                        placeholder ="e.g., Kanye West, Wonderwall..."
-                        aria-required ="true"
-                        autocomplete ="off"
-                    >
-                    <span class ="error-message" id="search-error" role="alert"></span>
-                </div>
+        <section class="search-box">
+            <h2>Search for Music</h2>
+            
+            <form id="searchForm">
+                <label for="searchInput">What are you looking for?</label>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Try Kanye West or Wonderwall!..."
+                    required
+                >
+                <span id="errorMsg" class="error"></span>
 
-                <div class ="form-group">
-                    <label for ="search-type">Search for:</label>
-                    <select id ="search-type" name="type">
-                        <option value ="track">Songs</option>
-                        <option value ="artist">Artists</option>
-                        <option value ="album">Albums</option>
-                    </select>
-                </div>
+                <label for="searchType">Type:</label>
+                <select id="searchType">
+                    <option value="track">Songs</option>
+                    <option value="artist">Artists</option>
+                    <option value="album">Albums</option>
+                </select>
 
-                <button type ="submit" class ="btn-primary">Search</button>
+                <button type="submit">Search</button>
             </form>
         </section>
 
-        
-        <div id ="loading" class ="loading hidden" aria-live="polite">
-            <div class ="spinner"></div>
-            <p>Searching...</p>
+        <!-- loading spinner -->
+       
+        <div id="loading" class="loading hide">
+            
+            <p>Loading results...</p>
         </div>
 
-      
-         <div id ="error-display" class="error-display hidden" role="alert"></div>
+        <div id="errorBox" class="error-box hide"></div>
 
-        
-        <section id="results-section" class="results-section hidden">
-            <h2>Search Results</h2>
-            <div id="results-count" class="results-count"></div>
-            <div id="results-container" class="results-grid"></div>
-        </section>
+        <section id="resultsSection" class="results hide">
+            
+             <h2>Results</h2>
+            <p id="resultCount"></p>
+             <div id="resultsGrid"></div>
+       
+            </section>
+
     </main>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Music Library | Data provided by iTunes Search API</p>
-    </div>
-</footer>
+    <footer>
+        <p>Music Library 2026 | Using iTunes Search API</p>
+    </footer>
 
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
