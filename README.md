@@ -116,6 +116,8 @@ In building "Music Library", I've utilised a combination of languages, APIs and 
 - **Chrome DevTools**: Used extensively for debugging and testing.
 - **Lighthouse**: For performance and accessibility testing.
 
+
+
 ### Features
 
 #### Whole Site
@@ -185,26 +187,33 @@ To enhance "Music Library" further, I have identified several potential improvem
   - Quick access dropdown to repeat previous searches
   - Clear history option for privacy
 
-- **Pagination**:
-  - "Load More" button to fetch additional results
-  - Infinite scroll implementation
-  - Navigate between result pages
-
 - **Enhanced Accessibility**:
   - Keyboard shortcuts for common actions
   - Screen reader announcements for dynamic content
   - High contrast mode toggle
 
-### JavaScript Functionality
 
-The application is built using vanilla JavaScript with modern ES6+ features. No external libraries or frameworks were used, demonstrating proficiency in core JavaScript concepts.
+## Deployment
 
-#### Core Functions
+This site was deployed via GitHub pages using the following steps:
+- From the GitHub repository, navigate to **Settings**
+- In the left-hand navigation section select **Pages**
+- From the source section drop-down menu change Branch from **none** to **main** and click the **Save**
+- After a few minutes the website is live and will be automatically refreshed with each Git push command.
 
-**Event Listeners**
+The link to the deployed site is:  https://axelaxel97.github.io/Oisin-Rings-Portfolio-1-Milestone-Project/
 
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-    searchForm.addEventListener('submit', handleSearch);
-    searchInput.addEventListener('input', checkInput);
-});
+To run locally:
+- Log into GitHub and click on repository to download ([ms1-project](https://github.com/AxelAxel97/Oisin-Rings-Portfolio-1-Milestone-Project))
+
+- Select **Code** and click "Download the Zip file.
+- Once download is completed, extract ZIP file and use in your local environment.
+
+Alternatively you can **Clone** or **Fork** this repository into your GitHub account.
+
+
+### Acknowledgments
+* All the tutors ive made contact with for great guidance and feedback throughout the project.
+* Code Institute Student Care Team: For extreme patience and general help as always!
+* The wider Code Institute Slack Community: For helpful discussions and support.
+
