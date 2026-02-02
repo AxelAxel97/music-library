@@ -2,46 +2,6 @@
 
 [Click here](https://YOUR-USERNAME.github.io/music-library/) to view the live web application.
 
-## Table of Contents
-
-- [Project Development & Planning](#project-development--planning)
-  - [Project Goals](#project-goals)
-    - [Project Purpose](#project-purpose)
-    - [User Goals](#user-goals)
-  - [Research](#research)
-    - [Market Review](#market-review)
-    - [Key Takeaways](#key-takeaways)
-  - [User Stories](#user-stories)
-  - [Design, Layout & Structure](#design-layout--structure)
-    - [Wireframes](#wireframes)
-    - [Structure](#structure)
-    - [Colour](#colour)
-    - [Fonts](#fonts)
-  - [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [APIs](#apis)
-    - [Tools](#tools)
-  - [Features](#features)
-    - [Whole Site](#whole-site)
-    - [Main Features](#main-features)
-    - [Future Features](#future-features)
-  - [JavaScript Functionality](#javascript-functionality)
-    - [Core Functions](#core-functions)
-    - [API Integration](#api-integration)
-    - [Error Handling](#error-handling)
-  - [Testing](#testing)
-    - [HTML Validation](#html-validation)
-    - [CSS Validation](#css-validation)
-    - [JavaScript Validation](#javascript-validation)
-    - [Accessibility](#accessibility)
-    - [Performance](#performance)
-    - [Responsiveness / Device Testing](#responsiveness--device-testing)
-    - [Browser Compatibility](#browser-compatibility)
-    - [Bugs & Fixes](#bugs--fixes)
-    - [Testing User Stories](#testing-user-stories)
-  - [Deployment](#deployment)
-  - [Credits](#credits)
-
 ## Project Development & Planning
 
 ### Project Goals
@@ -173,7 +133,7 @@ In building "Music Library", I've utilised a combination of languages, APIs and 
   - Real-time input validation
   - Submit button to trigger searches
 
-![Music Library Search Form](assets/images/screenshots/search-form.png)
+![Music Library Search Form](assets/images/search-form.png)
 
 - **Dynamic Results Grid**:
   - CSS Grid layout that adapts to screen size
@@ -185,14 +145,14 @@ In building "Music Library", I've utilised a combination of languages, APIs and 
     - Link to view on iTunes
   - Cards feature hover animations for better UX
 
-![Music Library Results](assets/images/screenshots/results-grid.png)
+![Music Library Results](assets/images/results-grid.png)
 
 - **Loading Indicator**:
   - Displays while fetching data from API
   - Provides clear feedback that search is in progress
   - Automatically hides when results load
 
-![Music Library Loading](assets/images/screenshots/loading.png)
+![Music Library Loading](assets/images/loading.png)
 
 - **Error Handling**:
   - Input validation shows errors for empty or invalid searches
@@ -200,13 +160,6 @@ In building "Music Library", I've utilised a combination of languages, APIs and 
   - "No results" state provides helpful guidance
   - All errors displayed in clear, readable format
 
-![Music Library Error](assets/images/screenshots/error.png)
-
-- **Data Display**:
-  - Results counter shows number of items found
-  - Clear visual hierarchy in result cards
-  - Responsive images that load efficiently
-  - External links open in new tabs for better UX
 
 #### Future Features
 
