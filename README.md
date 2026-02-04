@@ -1,6 +1,6 @@
 # Music Library
 
-[Click here](https://.github.io/music-library/) to view the live web application.
+[Click here](https://axelaxel97.github.io/music-library/) to view the live web application.
 
 ## Project Development & Planning
 
