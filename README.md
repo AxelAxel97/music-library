@@ -82,11 +82,14 @@ The application follows a single-page structure with clearly defined sections:
 A dark theme colour palette was chosen for "Music Library", inspired by modern music streaming platforms. This not only provides a sleek backdrop for album artwork but also reduces eye strain during extended use.
 
 **Primary Colours:**
-- Background: `#1a1a1a` - Deep black for the main background
-- Secondary: `#2d2d2d` - Dark grey for cards and sections
-- Accent: `#1db954` - Vibrant green for interactive elements
-- Text: `#ffffff` - Pure white for maximum readability
-- Error: `#ff4444` - Bright red for error messages
+
+![Colour palette](assets/images/colour.png)
+
+- Background: `#323232` - Deep black for the main background
+- Secondary: `#2C302D` - Dark grey for cards and sections
+- Accent: `#33543B` - Vibrant green for interactive elements
+- Text: `#A5A5A5` - Pure white for maximum readability
+- Error: `#392E2E` - Bright red for error messages
 
 #### Fonts
 
