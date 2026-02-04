@@ -212,7 +212,7 @@ This site was deployed via GitHub pages using the following steps:
 - From the source section drop-down menu change Branch from **none** to **main** and click the **Save**
 - After a few minutes the website is live and will be automatically refreshed with each Git push command.
 
-The link to the deployed site is:  
+The link to the deployed site is:(https://axelaxel97.github.io/music-library/)
 
 To run locally:
 - Log into GitHub and click on repository to download 
