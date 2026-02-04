@@ -148,7 +148,7 @@ No errors were found with the W3C validator for CSS.
 - **Dynamic Results Grid**:
   - CSS Grid layout that adapts to screen size
   - Each result displays as a card with:
-    - Album artwork (or placeholder if unavailable)
+    - Album artwork 
     - Title/name prominently displayed
     - Artist information
     - Additional metadata (album name, genre, track count, etc.)
